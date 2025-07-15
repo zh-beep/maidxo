@@ -5,13 +5,11 @@ from typing import Dict, Any
 import time
 import json
 
-# Add the Open-MAI-Dx-Orchestrator directory to the path
-sys.path.append(os.path.join(os.path.dirname(__file__), "Open-MAI-Dx-Orchestrator"))
-
 try:
     from mai_dx import MaiDxOrchestrator
 except ImportError:
     st.error("Could not import MaiDxOrchestrator. Please ensure the mai_dx package is installed.")
+    st.error("Run: uv pip install -e ./Open-MAI-Dx-Orchestrator")
     st.stop()
 
 # Page configuration
