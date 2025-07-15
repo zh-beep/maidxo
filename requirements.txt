@@ -3,4 +3,3 @@ loguru
 swarms
 pydantic
 python-dotenv
--e ./Open-MAI-Dx-Orchestrator
